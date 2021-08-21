@@ -4,26 +4,8 @@ It will ignore special characters, spaces, symboles, and capitalization
 */
 
 // passes on the string to get fixed while also making it all lowercase
-// then checks from start and end to the center whether the values are equal O(n/2)
-function startCheck(){
-  clearVis();
-  if(palindrome(document.getElementById("textBox").value)){
-    document.getElementById("is").style = "visible";
-  }else{
-    document.getElementById("isnt").style= "visible";
-  }
-}
-
-function clearText(){
-  document.getElementById("textBox").value = "";
-  clearVis();
-}
-
-function clearVis(){
-  document.getElementById("is").style = "display:none";
-  document.getElementById("isnt").style = "display:none";
-}
-
+// then checks from start and end to the center whether the values are equal 
+// O(n/2) time complexity
 function palindrome(str) {
   str = fixStr(str.toLowerCase()); 
   for(var i = 0; i < str.length/2; i++){
@@ -39,3 +21,24 @@ function fixStr(str){
   return str.replace(anRege,"");
 }
 
+
+function startCheck(){
+  clearVis();
+  if(palindrome(document.getElementById("textBox").value)){
+    document.getElementById("is").style = "visible";
+  }else{
+    document.getElementById("isnt").style= "visible";
+  }
+}
+
+
+//HTML 
+function clearText(){
+  document.getElementById("textBox").value = "";
+  clearVis();
+}
+
+function clearVis(){
+  document.getElementById("is").style = "display:none";
+  document.getElementById("isnt").style = "display:none";
+}
