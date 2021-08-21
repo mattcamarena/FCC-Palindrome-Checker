@@ -14,7 +14,7 @@ function palindrome(str) {
   return true;
 }
 
-// deletes all characters non alphanumeric (excluding underscores) 
+// deletes all characters other than Letters and Numbers
 // and returns the remaining string
 function fixStr(str){
   let anRege = /[^a-zA-Z0-9]*/g;
