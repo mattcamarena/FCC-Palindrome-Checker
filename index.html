@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="scripts.js"></script>
+<style>
+h1  {text-align: center;}
+body {text-align:  center;}
+footer{
+	position:  absolute;
+	right:  0;
+	bottom:  0;
+}
+</style>
+<body>
+<header>
+	<h1>Palidrome Checker</h1>
+</header>	
+
+<textarea rows="4" cols="50" id="textBox"></textarea><br>
+<button onclick="startCheck()">Check</button>
+<button onclick="clearText()">Clear</button><br>
+<label id="is" style="display:none">Is a palindrome</label>
+<label id="isnt" style="display:none">Is not a palindrome</label>
+<footer>
+<button onclick="window.location='https://github.com/mattcamarena/FCC-Palindrome-Checker'">Github</button>
+</footer>
+</body>
+</html>
