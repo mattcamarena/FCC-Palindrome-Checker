@@ -2,7 +2,7 @@ Free Code Camp's (FCC) Palindrome Checker Project
 
 The Project will check to see if the given user input is a palindrome or not according to the standards set by FCC.
 
-Prompt given: 
+Prompt given: <br />
 Return true if the given string is a palindrome. Otherwise, return false.
 
 A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
